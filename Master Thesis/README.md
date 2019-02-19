@@ -11,4 +11,5 @@
 - *Conclusions* - Evaluation of the working conditions of the two plants and proposal of a framework for a better use of data analysis methods in the study area. 
 
 **Programming languages**: R, LaTeX
+
 **Softwares used**: RStudio, TeXStudio, Microsoft Excel, Microsoft PowerPoint
