@@ -1,0 +1,291 @@
+I dati gestionali relativi agli impianti di depurazione studiati sono stati forniti dal gestore. I dati di precipitazione, invece, sono stati reperiti nel sito di Arpa Veneto\footnote{\url{http://www.arpa.veneto.it/bollettini/storico}}.
+In particolare, questi dati sono delle \textit{time series}, poiché ogni misura è associata a uno specifico giorno dell'anno. Una \textit{time series}, infatti, è una sequenza di osservazioni ordinata nel tempo e, nella sua analisi, grande importanza è assunta dall'ordine in cui sono state fatte le osservazioni \cite{anderson1994statistical}.
+
+Le principali caratteristiche statistiche dei dati sono ricavate dalla statistica descrittiva (\autoref{sec:stat_desc}). Alcune di queste sono caratteristiche intrinseche della serie di dati e rappresentano una descrizione dei dati a disposizione. In particolare, si indicheranno i valori di:
+\begin{itemize}
+	\item \textbf{Lunghezza della serie storica}: lunghezza in anni, indipendentemente dalla frequenza di campionamento, calcolata come differenza tra anno dell'ultimo rilevamento e anno del primo rilevamento aumentata di un'unità \cite{book}.
+	\item \textbf{Numero totale di dati}: numero di osservazioni presenti nella serie \cite{book}.
+	\item \textbf{Numero di NA (\textit{Not Available})}: numero di dati mancanti, ovvero di giorni in cui non si ha osservazione.
+	\item \textbf{Percentuale di NA}: percentuale di dati mancanti rispetto al numero di giorni del periodo considerato.
+	\item \textbf{Serie di NA più lunga}: maggior numero di dati mancanti consecutivi all'interno della serie di dati.
+	\item \textbf{Serie di NA più frequente}: numero di NA consecutivi maggiormente riscontrato nella serie di dati.
+	\item \textbf{Frequenza di $n$ NA}: numero di intervalli di $n$ NA consecutivi.   
+	\item \textbf{Completezza}: rapporto tra il numero totale di dati e il numero massimo di dati (inteso come il numero di giorni del periodo considerato) \cite{book}.
+	
+\end{itemize}
+
+
+Per entrambi gli impianti, i dati a disposizione sono: 
+\begin{itemize}
+	\item pH
+	\item temperatura (T)
+	\item portata (Q)
+	\item solidi sospesi totali (SST)
+	\item BOD\textsubscript{5}
+	\item COD
+	\item ione ammonio (NH\textsubscript{4\textsuperscript{+}})
+	\item azoto nitroso (N-NO\textsubscript{2}\textsuperscript{-})
+	\item azoto nitrico (N-NO\textsubscript{3}\textsuperscript{-})
+	\item azoto Kjeldahl (TKN)
+	\item azoto totale (N\textsubscript{tot})
+	\item fosforo totale (P\textsubscript{tot})
+	\item \textit{Escherichia coli}
+	\item portata del fango di supero (Q\textsubscript{f})
+	\item volume del fango in vasca di ossidazione (SSS\textsubscript{OX})
+	\item solidi sospesi totali in vasca di ossidazione (SST\textsubscript{OX})
+	\item indice di volume del fango (SVI)
+	\item solidi sospesi totali nel fango di ricircolo (SST\textsubscript{RIC})
+	
+\end{itemize}
+
+In \autoref{tab:sa_NAin}, \autoref{tab:sa_NAout} e \autoref{tab:sa_NApar-op} sono raccolte le caratteristiche sopra descritte per i dati dell'impianto A, mentre in \autoref{tab:c_NAin}, \autoref{tab:c_NAout} e \autoref{tab:c_NApar-op} ci sono quelle per l'impianto B.
+
+
+\begin{sidewaystable}
+\begin{center}
+	\scriptsize
+	\begin{tabular}{|ll|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{15}{|c|}{\textbf{IMPIANTO A - ingresso}}                                                                                                   \\ \hline
+		\multicolumn{2}{|l|}{}                           & pH   & T    & Q     & SST   & BOD\textsubscript{5}  & COD  & NH\textsubscript{4}\textsuperscript{+} & N-NO\textsubscript{2}\textsuperscript{-} & N-NO\textsubscript{3}\textsuperscript{-} & TKN  & N\textsubscript{tot}  & P\textsubscript{tot}  & \textit{E. coli} \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}anni{]}}       & \multicolumn{13}{c|}{4}                                                                              \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}giorni{]}}     & \multicolumn{13}{c|}{1.277}                                                                          \\ \hline
+		\multicolumn{2}{|l|}{Numero totale dati}         & 334  & 964  & 1.277 & 219   & 219   & 579  & 545  & 180    & 180    & 542  & 218   & 219   & 177     \\ \hline
+		\multicolumn{2}{|l|}{Numero di NA}               & 943  & 313  & 0     & 1.058 & 1.058 & 698  & 732  & 1.097  & 1.097  & 735  & 1.059 & 1.058 & 1.100   \\ \hline
+		\multicolumn{2}{|l|}{Percentuale di NA {[}\%{]}} & 73,8 & 24,5 & 0     & 82,9  & 82,9  & 54,7 & 57,3 & 85,9   & 85,9   & 57,6 & 82,9  & 82,9  & 86,1    \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più lunga}      & 13   & 7    & -     & 13    & 13    & 4    & 4    & 13     & 13     & 4    & 13    & 13    & 19      \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più frequente}  & 6    & 6    & -     & 6     & 6     & 1    & 1    & 6      & 6      & 1    & 6     & 6     & 6       \\ \hline
+		\multirow{11}{*}{Frequenza di}      & 1 NA       & -    & -    & -     & -     & -     & 300  & 330  & -      & -      & 335  & -     & -     & -       \\ \cline{3-15} 
+		& 2 NA       & -    & -    & -     & 24    & 24    & 165  & 167  & -      & -      & 164  & 24    & 24    & -       \\ \cline{3-15} 
+		& 3 NA       & -    & 1    & -     & 19    & 19    & 16   & 16   & -      & -      & 16   & 19    & 19    & -       \\ \cline{3-15} 
+		& 4 NA       & 2    & 1    & -     & 6     & 6     & 5    & 5    & 1      & 1      & 6    & 6     & 6     & 1       \\ \cline{3-15} 
+		& 5 NA       & 10   & 4    & -     & 24    & 24    & -    & -    & 14     & 14     & -    & 24    & 24    & 13      \\ \cline{3-15} 
+		& 6 NA       & 128  & 43   & -     & 124   & 124   & -    & -    & 152    & 152    & -    & 123   & 124   & 148     \\ \cline{3-15} 
+		& 7 NA       & 10   & 4    & -     & 6     & 6     & -    & -    & 11     & 11     & -    & 7     & 6     & 11      \\ \cline{3-15} 
+		& 8 NA       & 1    & -    & -     & -     & -     & -    & -    & 1      & 1      & -    & -     & -     & 1       \\ \cline{3-15} 
+		& 10 NA      & -    & -    & -     & 1     & 1     & -    & -    & -      & -      & -    & 1     & 1     & -       \\ \cline{3-15} 
+		& 13 NA      & 3    & -    & -     & 1     & 1     & -    & -    & 2      & 2      & -    & 1     & 1     & 3       \\ \cline{3-15} 
+		& 19 NA      & -    & -    & -     & -     & -     & -    & -    & -      & -      & -    & -     & -     & 1       \\ \hline
+		\multicolumn{2}{|l|}{Completezza {[}\%{]}}       & 26,2 & 75,5 & 0,0     & 17,1  & 17,1  & 45,3 & 42,7 & 14,1   & 14,1   & 42,4 & 17,1  & 17,1  & 13,9    \\ \hline
+	\end{tabular}
+	\caption{Descrizione dei dati in ingresso - impianto A}
+	\label{tab:sa_NAin}
+\end{center}
+\end{sidewaystable}
+
+
+\begin{sidewaystable}
+\begin{center}
+\scriptsize
+	\begin{tabular}{|ll|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{15}{|c|}{\textbf{IMPIANTO A - uscita}}                                                                                                     \\ \hline
+	\multicolumn{2}{|l|}{}                           & pH   & T    & Q     & SST   & BOD\textsubscript{5}  & COD  & NH\textsubscript{4}\textsuperscript{+} & N-NO\textsubscript{2}\textsuperscript{-} & N-NO\textsubscript{3}\textsuperscript{-} & TKN  & N\textsubscript{tot}  & P\textsubscript{tot}  & \textit{E. coli} \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}anni{]}}       & \multicolumn{13}{c|}{4}                                                                              \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}giorni{]}}     & \multicolumn{13}{c|}{1.277}                                                                          \\ \hline
+		\multicolumn{2}{|l|}{Numero totale dati}         & 333  & 962  & 1.277 & 578  & 217   & 579  & 544  & 543    & 543    & 179   & 218   & 219   & 178     \\ \hline
+		\multicolumn{2}{|l|}{Numero di NA}               & 944  & 315  & 0     & 699  & 1.060 & 698  & 733  & 734    & 734    & 1.098 & 1.059 & 1.058 & 1.099    \\ \hline
+		\multicolumn{2}{|l|}{Percentuale di NA {[}\%{]}} & 73,9 & 24,7 & 0     & 54,7 & 83,0  & 54,7 & 57,4 & 57,5   & 57,5   & 86,0  & 82,9  & 82,9  & 86,1    \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più lunga}      & 13   & 7    & -     & 5    & 13    & 4    & 4    & 4      & 4      & 13    & 13    & 13    & 13      \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più frequente}  & 6    & 6    & -     & 1    & 6     & 1    & 1    & 1      & 1      & 6     & 6     & 6     & 6       \\ \hline
+		\multirow{12}{*}{Frequenza di}      & 1 NA       & -    & 2    & -     & 300  & -     & 300  & 330  & 325    & 325    & -     & -     & -     & -       \\ \cline{3-15} 
+		& 2 NA       & -    & -    & -     & 165  & 24    & 165  & 168  & 163    & 163    & -     & 24    & 24    & -       \\ \cline{3-15} 
+		& 3 NA       & -    & 1    & -     & 16   & 18    & 16   & 13   & 17     & 17     & -     & 19    & 19    & -       \\ \cline{3-15} 
+		& 4 NA       & 2    & 1    & -     & 4    & 6     & 5    & 7    & 8      & 8      & 1     & 6     & 6     & 1       \\ \cline{3-15} 
+		& 5 NA       & 10   & 4    & -     & 1    & 23    & -    & -    & -      & -      & 14    & 24    & 24    & 13      \\ \cline{3-15} 
+		& 6 NA       & 126  & 43   & -     & -    & 122   & -    & -    & -      & -      & 150   & 123   & 124   & 149     \\ \cline{3-15} 
+		& 7 NA       & 10   & 4    & -     & -    & 6     & -    & -    & -      & -      & 11    & 7     & 6     & 11      \\ \cline{3-15} 
+		& 8 NA       & 1    & -    & -     & -    & -     & -    & -    & -      & -      & 1     & -     & -     & 1       \\ \cline{3-15} 
+		& 10 NA      & -    & -    & -     & -    & 2     & -    & -    & -      & -      & -     & 1     & 1     & -       \\ \cline{3-15} 
+		& 12 NA      & -    & -    & -     & -    & 1     & -    & -    & -      & -      & -     & -     & -     & 1       \\ \cline{3-15} 
+		& 13 NA      & 4    & -    & -     & -    & 1     & -    & -    & -      & -      & 3     & 1     & 1     & 3        \\ \hline
+		\multicolumn{2}{|l|}{Completezza {[}\%{]}}       & 26,1 & 75,3 & 0,0     & 45,3 & 17,0  & 45,3 & 42,6 & 42,5   & 42,5   & 14,0  & 17,1  & 17,1  & 13,9    \\ \hline
+	\end{tabular}
+	\caption{Descrizione dei dati in uscita - impianto A}
+	\label{tab:sa_NAout}
+\end{center}
+\end{sidewaystable}
+
+
+\begin{sidewaystable}
+\begin{center}
+\scriptsize
+	\begin{tabular}{|ll|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{15}{|c|}{\textbf{IMPIANTO A - parametri operativi}}                                                                                                    \\ \hline
+		\multicolumn{2}{|l|}{}                           & Q\textsubscript{f}   & SSS\textsubscript{OX1} & SST\textsubscript{OX1} & SVI\textsubscript{1}  & SST\textsubscript{RIC1} & SSS\textsubscript{OX2} & SST\textsubscript{OX2} & SVI\textsubscript{2}  & SST\textsubscript{RIC2} & SSS\textsubscript{OX3} & SST\textsubscript{OX3} & SVI\textsubscript{3}  & SST\textsubscript{RIC3} \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}anni{]}}       & \multicolumn{13}{c|}{4}                                                                                          \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}giorni{]}}     & \multicolumn{13}{c|}{1.277}                                                                                      \\ \hline
+		\multicolumn{2}{|l|}{Numero totale dati}         & 1.277  & 204    & 227    & 202   & 181     & 211    & 225    & 209   & 179     & 205    & 227    & 203   & 177     \\ \hline
+		\multicolumn{2}{|l|}{Numero di NA}               & 0  & 1.073  & 1.050  & 1.075 & 1.096   & 1.066  & 1.052  & 1.068 & 1.098   & 1.072  & 1.050  & 1.074 & 1.100   \\ \hline
+		\multicolumn{2}{|l|}{Percentuale di NA {[}\%{]}} & 0 & 84,0   & 82,2   & 84,2  & 85,8    & 83,5   & 82,4   & 83,6  & 86,0    & 83,9   & 82,2   & 84,1  & 86,1    \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più lunga}      & -   & 48     & 27     & 48    & 13      & 26     & 26     & 26    & 13      & 20     & 34     & 34    & 20      \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più frequente}  & -    & 6      & 6      & 6     & 6       & 6      & 6      & 6     & 6       & 6      & 6      & 6     & 6       \\ \hline
+		\multirow{17}{*}{Frequenza di}      & 1 NA       & -  & 33     & 46     & 32    & -       & 36     & 45     & 35    & -       & 30     & 44     & 30    & -       \\ \cline{3-15} 
+		& 2 NA       & -   & -      & -      & -     & -       & 1      & -      & -     & -       & -      & -      & -     & -       \\ \cline{3-15} 
+		& 3 NA       & -   & 1      & 2      & 1     & 1       & 2      & 2      & 2     & 1       & 1      & 1      & 1     & 1       \\ \cline{3-15} 
+		& 4 NA       & -    & 35     & 47     & 34    & 1       & 33     & 44     & 34    & 1       & 31     & 45     & 30    & 1       \\ \cline{3-15} 
+		& 5 NA       & -    & 11     & 11     & 11    & 10      & 9      & 10     & 9     & 10      & 13     & 14     & 13    & 10      \\ \cline{3-15} 
+		& 6 NA       & -   & 106    & 107    & 105   & 158     & 116    & 113    & 114   & 154     & 112    & 107    & 112   & 151     \\ \cline{3-15} 
+		& 7 NA       & -    & 10     & 10     & 10    & 10      & 8      & 9      & 8     & 10      & 7      & 8      & 7     & 10      \\ \cline{3-15} 
+		& 8 NA       & -    & 1      & 2      & 1     & 1       & -      & 1      & -     & 1       & 1      & 1      & -     & 1       \\ \cline{3-15} 
+		& 13 NA      & -    & 5      & -      & 6     & 1       & 4      & -      & 5     & 3       & 4      & 1      & 4     & 3       \\ \cline{3-15} 
+		& 14 NA      & -    & -      & -      & -     & -       & -      & -      & -     & -       & -      & -      & 1     & -       \\ \cline{3-15} 
+		& 15 NA      & -    & 1      & -      & 1     & -       & 1      & -      & 1     & -       & 1      & -      & 1     & -       \\ \cline{3-15} 
+		& 20 NA      & -    & -      & -      & -     & -       & -      & -      & -     & -       & 2      & -      & 1     & 1       \\ \cline{3-15} 
+		& 26 NA      & -    & -      & -      & -     & -       & 1      & 1      & 1     & -       & -      & -      & -     & -       \\ \cline{3-15} 
+		& 27 NA      & -    & -      & 1      & -     & -       & -      & -      & -     & -       & -      & -      & -     & -       \\ \cline{3-15} 
+		& 34 NA      & -    & -      & -      & -     & -       & -      & -      & -     & -       & -      & 1      & 1     & -       \\ \cline{3-15} 
+		& 48 NA      & -    & 1      & -      & 1     & -       & -      & -      & -     & -       & -      & -      & -     & -       \\ \hline
+		\multicolumn{2}{|l|}{Completezza {[}\%{]}}       & 100,0 & 16,0   & 17,8   & 15,8  & 14,2    & 16,5   & 17,6   & 16,4  & 14,0    & 16,1   & 17,8   & 15,9  & 13,9    \\ \hline
+	\end{tabular}
+	\caption{Descrizione dei dati dei parametri operativi - impianto A}
+	\label{tab:sa_NApar-op}
+\end{center}
+\end{sidewaystable}
+
+
+\begin{sidewaystable}
+\begin{center}
+\scriptsize
+	\begin{tabular}{|ll|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{15}{|c|}{\textbf{IMPIANTO B - ingresso}}                                                                                                   \\ \hline
+		\multicolumn{2}{|l|}{}                           & pH   & T    & Q     & SST   & BOD\textsubscript{5}  & COD  & NH\textsubscript{4}\textsuperscript{+} & N-NO\textsubscript{2}\textsuperscript{-} & N-NO\textsubscript{3}\textsuperscript{-} & TKN  & N\textsubscript{tot}  & P\textsubscript{tot}  & \textit{E. coli} \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}anni{]}}       & \multicolumn{13}{c|}{4}                                                                              \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}giorni{]}}     & \multicolumn{13}{c|}{1.277}                                                                          \\ \hline
+		\multicolumn{2}{|l|}{Numero totale dati}         & 333  & 963  & 1.275 & 218   & 218   & 572  & 545  & 179    & 179    & 534  & 215   & 218   & 176     \\ \hline
+		\multicolumn{2}{|l|}{Numero di NA}               & 944  & 314  & 2     & 1.059 & 1.059 & 705  & 732  & 1.098  & 1.098  & 743  & 1.062 & 1.059 & 1.101   \\ \hline
+		\multicolumn{2}{|l|}{Percentuale di NA {[}\%{]}} & 73,9 & 24,6 & 0,2   & 82,9  & 82,9  & 55,2 & 57,3 & 86,0   & 86,0   & 58,2 & 83,2  & 82,9  & 86,2    \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più lunga}      & 14   & 14   & 2     & 13    & 13    & 4    & 4    & 14     & 14     & 6    & 14    & 13    & 14      \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più frequente}  & 6    & 6    & 2     & 6     & 6     & 1    & 1    & 6      & 6      & 1    & 6     & 6     & 6       \\ \hline
+		\multirow{13}{*}{Frequenza di}      & 1 NA       & -    & -    & -     & 1     & 1     & 291  & 328  & -      & -      & 317  & 1     & 1     & -       \\ \cline{3-15} 
+		& 2 NA       & -    & -    & 1     & 25    & 25    & 159  & 168  & -      & -      & 158  & 25    & 25    & -       \\ \cline{3-15} 
+		& 3 NA       & -    & 1    & -     & 22    & 22    & 20   & 16   & -      & -      & 20   & 22    & 22    & -       \\ \cline{3-15} 
+		& 4 NA       & 3    & 2    & -     & 4     & 4     & 9    & 5    & 2      & 2      & 11   & 4     & 4     & 2       \\ \cline{3-15} 
+		& 5 NA       & 9    & 3    & -     & 22    & 22    & -    & -    & 13     & 13     & -    & 22    & 22    & 13      \\ \cline{3-15} 
+		& 6 NA       & 127  & 42   & -     & 122   & 122   & -    & -    & 151    & 151    & 1    & 119   & 122   & 146     \\ \cline{3-15} 
+		& 7 NA       & 8    & 2    & -     & 6     & 6     & -    & -    & 9      & 9      & -    & 7     & 6     & 8       \\ \cline{3-15} 
+		& 8 NA       & 2    & 1    & -     & 1     & 1     & -    & -    & 2      & 2      & -    & 1     & 1     & 2       \\ \cline{3-15} 
+		& 10 NA      & -    & -    & -     & 1     & 1     & -    & -    & -      & -      & -    & 1     & 1     & -       \\ \cline{3-15} 
+		& 11 NA      & -    & -    & -     & 1     & 1     & -    & -    & -      & -      & -    & 1     & 1     & -       \\ \cline{3-15} 
+		& 13 NA      & 3    & -    & -     & 1     & 1     & -    & -    & 2      & 2      & -    & 1     & 1     & 4       \\ \cline{3-15} 
+		& 14 NA      & 1    & 1    & -     & -     & -     & -    & -    & 1      & 1      & -    & 1     & -     & 2        \\ \hline
+		\multicolumn{2}{|l|}{Completezza {[}\%{]}}       & 26,1 & 75,4 & 99,8  & 17,1  & 17,1  & 44,8 & 42,7 & 14,0   & 14,0   & 41,8 & 16,8  & 17,1  & 13,8    \\ \hline
+	\end{tabular}
+	\caption{Descrizione dei dati in ingresso - impianto B}
+	\label{tab:c_NAin}
+\end{center}
+\end{sidewaystable}
+
+
+\begin{sidewaystable}
+\begin{center}
+\scriptsize
+	\begin{tabular}{|ll|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{14}{|c|}{\textbf{IMPIANTO B - uscita}}                                                                                             \\ \hline
+	\multicolumn{2}{|l|}{}                           & pH   & T       & SST   & BOD\textsubscript{5}  & COD  & NH\textsubscript{4}\textsuperscript{+} & N-NO\textsubscript{2}\textsuperscript{-} & N-NO\textsubscript{3}\textsuperscript{-} & TKN  & N\textsubscript{tot}  & P\textsubscript{tot}  & \textit{E. coli} \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}anni{]}}       & \multicolumn{12}{c|}{4}                                                                      \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}giorni{]}}     & \multicolumn{12}{c|}{1.277}                                                                  \\ \hline
+		\multicolumn{2}{|l|}{Numero totale dati}         & 332  & 963  & 572  & 218   & 572  & 548  & 546    & 546    & 176   & 215   & 218   & 174     \\ \hline
+		\multicolumn{2}{|l|}{Numero di NA}               & 945  & 314  & 705  & 1.059 & 705  & 729  & 731    & 731    & 1.101 & 1.062 & 1.059 & 1.103   \\ \hline
+		\multicolumn{2}{|l|}{Percentuale di NA {[}\%{]}} & 74,0 & 24,6 & 55,2 & 82,9  & 55,2 & 57,1 & 57,2   & 57,2   & 86,2  & 83,2  & 82,9  & 86,4    \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più lunga}      & 14   & 14   & 4    & 13    & 4    & 4    & 5      & 5      & 14    & 14    & 13    & 14      \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più frequente}  & 6    & 6    & 1    & 6     & 1    & 1    & 1      & 1      & 6     & 6     & 6     & 6       \\ \hline
+		\multirow{12}{*}{Frequenza di}      & 1 NA       & -    & -    & 291  & 1     & 291  & 325  & 322    & 322    & -     & 1     & 1     & -       \\ \cline{3-14} 
+		& 2 NA       & -    & -    & 159  & 25    & 159  & 168  & 167    & 167    & -     & 25    & 25    & -       \\ \cline{3-14} 
+		& 3 NA       & -    & 1    & 20   & 22    & 20   & 16   & 15     & 15     & -     & 22    & 22    & -       \\ \cline{3-14} 
+		& 4 NA       & 3    & 2    & 9    & 4     & 9    & 5    & 5      & 5      & 2     & 4     & 4     & 2       \\ \cline{3-14} 
+		& 5 NA       & 9    & 3    & -    & 22    & -    & -    & 2      & 2      & 12    & 22    & 22    & 12      \\ \cline{3-14} 
+		& 6 NA       & 125  & 42   & -    & 122   & -    & -    & -      & -      & 146   & 119   & 122   & 144     \\ \cline{3-14} 
+		& 7 NA       & 8    & 2    & -    & 6     & -    & -    & -      & -      & 8     & 7     & 6     & 7       \\ \cline{3-14} 
+		& 8 NA       & 2    & 1    & -    & 1     & -    & -    & -      & -      & 2     & 1     & 1     & 2       \\ \cline{3-14} 
+		& 10 NA      & -    & -    & -    & 1     & -    & -    & -      & -      & -     & 1     & 1     & -       \\ \cline{3-14} 
+		& 11 NA      & -    & -    & -    & 1     & -    & -    & -      & -      & -     & 1     & 1     & -       \\ \cline{3-14} 
+		& 13 NA      & 4    & -    & -    & 1     & -    & -    & -      & -      & 4     & 1     & 1     & 6       \\ \cline{3-14} 
+		& 14 NA      & 1    & 1    & -    & -     & -    & -    & -      & -      & 2     & 1     & -     & 2       \\ \hline
+		\multicolumn{2}{|l|}{Completezza {[}\%{]}}       & 26,0 & 75,4 & 44,8 & 17,1  & 44,8 & 42,9 & 42,8   & 42,5   & 13,8  & 16,8  & 17,1  & 13,6    \\ \hline
+	\end{tabular}
+	\caption{Descrizione dei dati in uscita - impianto B}
+	\label{tab:c_NAout}
+\end{center}
+\end{sidewaystable}
+
+
+
+\begin{sidewaystable}
+\begin{center}	
+\scriptsize
+	\begin{tabular}{|ll|c|c|c|c|c|}
+		\hline
+		\multicolumn{7}{|c|}{\textbf{IMPIANTO B - parametri operativi}}                          \\ \hline
+		\multicolumn{2}{|l|}{}                           & Qf   & SSS\textsubscript{OX} & SST\textsubscript{OX} & SVI   & SST\textsubscript{RIC} \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}anni{]}}       & \multicolumn{5}{c|}{4}                \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}giorni{]}}     & \multicolumn{5}{c|}{1.277}            \\ \hline
+		\multicolumn{2}{|l|}{Numero totale dati}         & 1.277  & 277   & 329   & 277   & 180    \\ \hline
+		\multicolumn{2}{|l|}{Numero di NA}               & 0  & 1.000 & 948   & 1.000 & 1.097  \\ \hline
+		\multicolumn{2}{|l|}{Percentuale di NA {[}\%{]}} & 0,0 & 78,3  & 74,2  & 78,3  & 85,9   \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più lunga}      & -    & 14    & 8     & 14    & 14     \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più frequente}  & -    & 1     & 1     & 1     & 6      \\ \hline
+		\multirow{11}{*}{Frequenza di}      & 1 NA       & -  & 97    & 138   & 96    & -      \\ \cline{3-7} 
+		& 2 NA       & -   & 1     & -     & -     & -      \\ \cline{3-7} 
+		& 3 NA       & -   & 3     & 2     & 3     & 1      \\ \cline{3-7} 
+		& 4 NA       & -   & 92    & 135   & 93    & 1      \\ \cline{3-7} 
+		& 5 NA       & -    & 14    & 13    & 15    & 9      \\ \cline{3-7} 
+		& 6 NA       & -    & 52    & 26    & 51    & 158    \\ \cline{3-7} 
+		& 7 NA       & -    & 5     & 5     & 5     & 9      \\ \cline{3-7} 
+		& 8 NA       & -    & 2     & 1     & 2     & 1      \\ \cline{3-7} 
+		& 12 NA      & -    & 1     & -     & 1     & 1      \\ \cline{3-7} 
+		& 13 NA      & -    & 5     & -     & 5     & -      \\ \cline{3-7} 
+		& 14 NA      & -    & 1     & -     & 1     & 1      \\ \hline
+		\multicolumn{2}{|l|}{Completezza {[}\%{]}}       & 100,0 & 21,7  & 25,8  & 21,7  & 14,1   \\ \hline
+	\end{tabular}
+	\caption{Descrizione dei dati dei parametri operativi - impianto B}
+	\label{tab:c_NApar-op}
+\end{center}
+\end{sidewaystable}
+
+La valutazione delle caratteristiche dei dati mancanti permette di avere un'idea generale della distribuzione temporale dei dati e della loro frequenza di campionamento. 
+
+Ciò che si osserva è che, per entrambi gli impianti, la portata in ingresso e in uscita è misurata con una frequenza giornaliera. Altre grandezze, come COD, NH\textsubscript{4}\textsuperscript{+} e TKN in ingresso e SST, COD, N-NO\textsubscript{2}\textsuperscript{-} e N-NO\textsubscript{3}\textsuperscript{-} in uscita, sono misurate mediamente ogni 2 o 3 giorni. Tutte le restanti grandezze in ingresso e in uscita, invece, sono misurate in media ogni 7 giorni, ad eccezione della temperatura che, sia in ingresso che in uscita, è misurata ogni 7 giorni fino alla fine del 2015 e successivamente è rilevata con frequenza giornaliera. Anche il per il pH si ha, nel 2018, un aumento di frequenza di rilevazione del dato che passa da una media di 7 giorni a una misurazione giornaliera.
+
+I parametri operativi sono misurati con frequenze diverse nei due impianti. Per l'impianto A, si ha il dato della portata di supero principalmente ogni 2, 3 o 4 giorni, mentre tutti gli altri parametri sono misurati ogni 7 giorni. Per l'impianto B, invece, si hanno frequenze di campionamento maggiormente variabili. La portata del fango di supero è misurata nei giorni in cui si estrae il fango di supero mentre negli altri giorni è ovviamente nulla. I solidi sospesi totali nella vasca di ossidazione sono misurati ogni 2 o 5 giorni e il volume del fango nella vasca di ossidazione e lo SVI ogni 2, 5 o 7 giorni. Infine, i solidi sospesi totali nel fango di ricircolo sono misurati ogni 7 giorni.\\
+
+Tra i dati forniti dal gestore si ha anche la concentrazione di ossigeno disciolto (OD). I suoi valori, a differenza degli altri parametri, sono disponibili per gli anni 2017 e 2018 e la misurazione è fatta ogni 6 minuti. La descrizione della serie di dati è riassunta in \autoref{tab:sa_c_OD}. Come si osserva anche nella tabella, per l'impianto B si hanno a disposizione le misure di concentrazioni per meno giorni rispetto all'impianto A. In particolare, si hanno i valori di OD fino alle ore 13:12 del 27 giugno 2018.
+
+
+
+\begin{table}
+\begin{center}
+	\scriptsize
+	\begin{tabular}{|ll|c|c|c|}
+		\hline
+		\multicolumn{5}{|c|}{\textbf{OSSIGENO DISCIOLTO }}                                                                                                                                                                                                                           \\ \hline
+		\multicolumn{2}{|c|}{\textbf{}}                                                                               & \textbf{\begin{tabular}[c]{@{}c@{}}IMPIANTO A\\ Linee 1 -2\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}IMPIANTO A\\ Linea 3\end{tabular}} & \textbf{IMPIANTO B} \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}anni{]}}                                                                    & \multicolumn{2}{c|}{2}                                                                                                                           & 2                   \\ \hline
+		\multicolumn{2}{|l|}{Lunghezza {[}giorni{]}}                                                                  & \multicolumn{2}{c|}{546}                                                                                                                         & 543                 \\ \hline
+		\multicolumn{2}{|l|}{\begin{tabular}[c]{@{}l@{}}Numero massimo di misurazioni\\ (ogni 6 minuti)\end{tabular}} & \multicolumn{2}{c|}{131.040}                                                                                                                     & 130.213             \\ \hline
+		\multicolumn{2}{|l|}{Numero totale dati}                                                                      & 131.007                                                                  & 130.992                                                               & 129.902             \\ \hline
+		\multicolumn{2}{|l|}{Numero di NA}                                                                            & 33                                                                       & 48                                                                    & 311                 \\ \hline
+		\multicolumn{2}{|l|}{Percentuale di NA {[}\%{]}}                                                              & 0,03                                                                     & 0,04                                                                  & 0,24                \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più lunga}                                                                   & 8                                                                        & 45                                                                    & 208                 \\ \hline
+		\multicolumn{2}{|l|}{Serie di NA più frequente}                                                               & 1                                                                        & -                                                                     & 1                   \\ \hline
+		\multirow{10}{*}{Frequenza di}                                     & 1 NA                                     & 6                                                                        & 1                                                                     & 2                   \\ \cline{3-5} 
+		& 2 NA                                     & 1                                                                        & 1                                                                     & -                   \\ \cline{3-5} 
+		& 3 NA                                     & 1                                                                        & -                                                                     & 1                   \\ \cline{3-5} 
+		& 7 NA                                     & 2                                                                        & -                                                                     & 1                   \\ \cline{3-5} 
+		& 8 NA                                     & 1                                                                        & -                                                                     & 1                   \\ \cline{3-5} 
+		& 12 NA                                    & -                                                                        & -                                                                     & 1                   \\ \cline{3-5} 
+		& 29 NA                                    & -                                                                        & -                                                                     & 1                   \\ \cline{3-5} 
+		& 42 NA                                    & -                                                                        & -                                                                     & 1                   \\ \cline{3-5} 
+		& 45 NA                                    & -                                                                        & 1                                                                     & -                   \\ \cline{3-5} 
+		& 208 NA                                   & -                                                                        & -                                                                     & 1                   \\ \hline
+		\multicolumn{2}{|l|}{Completezza {[}\%{]}}                                                                    & 99,97                                                                    & 99,96                                                                 & 99,76               \\ \hline
+	\end{tabular}
+	\caption{Descrizione dei dati di concentrazione di OD}
+	\label{tab:sa_c_OD}
+\end{center}
+\end{table}
+
+

@@ -1,0 +1,65 @@
+# Installare pacchetti
+#install.packages("xts")
+library("xts")
+#install.packages("TTR")
+library("TTR")
+library("plotrix")
+library("hydroTSM")
+
+# caricare file excel
+Caprino<-read.csv2(file="c:/Users/Marianna/Documents/Universita/Tesi/R - Caprino/Caprino.CSV", header=TRUE, sep=";")
+
+# Creare timeseries
+## Creare un oggetto con le date (tutti gli anni)
+datestotal<-seq(as.Date("2015-01-01"), length=1277, by="days")
+## Creare la time series (tutti gli anni)
+tsQftotal_original<-na.approx(xts(x=Caprino[,8], order.by=datestotal))
+tsQftotal<-(xts(x=Caprino[,8], order.by=datestotal))
+tsQftotal[which(is.na(tsQftotal))]<-0
+#tsQftotal<-na.omit(xts(x=Caprino[,8], order.by=datestotal))
+MAtsQftotal<-na.omit(rollapply(tsQftotal, width=31, FUN=function(x) mean(x, na.rm=TRUE), by=1, by.column=TRUE, fill=NA, align="center"))
+
+
+## Creare un oggetto con le date (2015)
+tsQIN2015<-tsQftotal_original["2015"]
+
+## Creare un oggetto con le date (2016)
+tsQIN2016<-tsQftotal_original["2016"]
+
+## Creare un oggetto con le date (2017)
+tsQIN2017<-tsQftotal_original["2017"]
+
+## Creare un oggetto con le date (2018)
+tsQIN2018<-tsQftotal_original["2018"]
+
+
+
+
+
+# Plottare la time series 
+windows(width = 16,height = 9)
+par(mar=c(6,6,4,4),mgp=c(4,1,0)) #margini e distanza etichette-asse
+
+plot(as.zoo(tsQftotal),type = "n", xlab="Mesi",ylab=expression(paste("Q"[f]," [m"^"3","/d]")),yaxt="n",xaxt="n",yaxs="i",xaxs="i",cex.lab=1.2,ylim=c(0,300))
+drawTimeAxis(as.zoo(tsQftotal_original), tick.tstep ="months", lab.tstep ="months",las=2,lab.fmt="%m")
+axis(side=2,at=seq(from = 0,to = 300,by = 50),las=2)
+grid(nx=NA,ny=6,col="grey")
+lines(as.zoo(tsQftotal),col="darkslategrey")
+lines(as.zoo(MAtsQftotal[index(tsQftotal)]))
+
+
+abline(v=index(tsQIN2016[1,]),lwd=2)
+abline(v=index(tsQIN2017[1,]),lwd=2)
+abline(v=index(tsQIN2018[1,]),lwd=2)
+text(x=index(tsQIN2015[182,]),y=285,label="2015")
+text(x=index(tsQIN2016[182,]),y=285,label="2016")
+text(x=index(tsQIN2017[182,]),y=285,label="2017")
+text(x=index(tsQIN2018[90,]),y=285,label="2018")
+legend(x=index(tsQIN2017[80,]),y=270, c(expression("Q"[f]),expression(paste("MA Q"[f]," (mensile)"))),col=c("darkslategrey", "black"),lty=c(1,1),lwd=c(1,1),bg="white")
+
+# BOXPLOT
+windows(width = 6,height = 6)
+par(mar=c(1,6,4,4),mgp=c(4,1,0))
+
+boxplot(coredata(tsQftotal),yaxt="n",ylab=expression(paste("[m"^"3","/d]")),main=expression(paste("Q"[f])), ylim=c(0,1800),cex.lab=1.5,cex.main=2)
+axis(side=2,at=seq(from = 0,to = 1800,by = 200),las=2,labels = format(seq(from = 0,to = 1800,by = 200), big.mark = ".", decimal.mark = ","))

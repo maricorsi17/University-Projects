@@ -1,0 +1,96 @@
+\documentclass[12pt]{report}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{immagini/}}
+\usepackage[italian]{babel}
+\usepackage{tabularx}
+\usepackage[justification=centering]{caption}
+\usepackage[labelfont=bf]{caption}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\usepackage[a4paper,inner=4cm,outer=3cm,bottom=4cm,top=4cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\usepackage{rotating}
+\usepackage{mathtools}
+\usepackage[labelformat=simple]{subcaption}
+\usepackage{amsmath}
+\usepackage{breakcites}
+\usepackage{float}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{hhline}
+\usepackage[section]{placeins}
+\usepackage{float}
+
+
+
+\usepackage{tocloft,calc}
+\renewcommand{\cftchappresnum}{\chaptername\space}
+\setlength{\cftchapnumwidth}{\widthof{\textbf{Appendix~999~}}}
+\makeatletter
+\g@addto@macro\appendix{%
+	\addtocontents{toc}{%
+		\protect\renewcommand{\protect\cftchappresnum}{\appendixname\space}%
+	}%
+}
+\makeatother
+\begin{document}
+
+
+
+\tableofcontents
+\newpage\null\thispagestyle{empty}\newpage
+
+\chapter*{Introduzione}
+\label{ch:I}
+\addcontentsline{toc}{chapter}{\nameref{ch:I}}
+\input{capitoli/introduzione}
+
+\chapter{Descrizione degli impianti}
+\label{ch:1}
+\input{capitoli/descrizione_impianti}
+
+\chapter{Descrizione dei dati}
+\label{ch:2}
+\input{capitoli/descrizione_dati}
+
+\chapter{Metodi convenzionali di elaborazione dei dati gestionali}
+\label{ch:3}
+\input{capitoli/metodi_convenzionali}
+
+\chapter{Richiami di statistica}
+\label{ch:4}
+\input{capitoli/statistica}
+
+\chapter{Risultati delle elaborazioni}
+\label{ch:5}
+\input{capitoli/elaborazioni}
+
+\chapter{Sviluppi futuri}
+\label{ch:6}
+\input{capitoli/sviluppi_futuri}
+
+\chapter*{Conclusioni}
+\markboth{CONCLUSIONI}{CONCLUSIONI}
+\label{ch:C}
+\addcontentsline{toc}{chapter}{\nameref{ch:C}}
+\input{capitoli/conclusioni}
+
+
+\appendix\chapter{Configurazione R e RStudio\texttrademark}
+	\label{appendice}
+	\input{capitoli/appendice}
+
+
+\addcontentsline{toc}{chapter}{Bibliografia}
+\bibliography{bibliografia}
+\bibliographystyle{apalike}
+
+\end{document}

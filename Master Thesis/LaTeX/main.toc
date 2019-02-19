@@ -1,0 +1,73 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {chapter}{\nameref {ch:I}}{5}{chapter*.1}
+\contentsline {chapter}{\numberline {1}Descrizione degli impianti}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}Impianto A}{6}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Schema funzionale}{7}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Dotazioni}{7}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Impianto B}{11}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Schema funzionale}{11}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Dotazioni}{13}{subsection.1.2.2}
+\contentsline {chapter}{\numberline {2}Descrizione dei dati}{16}{chapter.2}
+\contentsline {chapter}{\numberline {3}Metodi convenzionali di elaborazione dei dati gestionali}{26}{chapter.3}
+\contentsline {section}{\numberline {3.1}Definizioni}{26}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Caratteristiche qualitative delle acque di scarico}{26}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Parametri operativi}{28}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Analisi esplorativa dei dati}{31}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Composizione tipica di liquami domestici}{31}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Rapporti}{32}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Carichi}{33}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Rendimenti}{33}{section.3.3}
+\contentsline {section}{\numberline {3.4}Limiti allo scarico}{34}{section.3.4}
+\contentsline {chapter}{\numberline {4}Richiami di statistica}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Statistica descrittiva}{35}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Indici di posizione}{35}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Media}{36}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}Percentili}{36}{subsubsection.4.1.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Indici di dispersione}{36}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Varianza}{36}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Scarto quadratico medio}{36}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}Coefficiente di variazione}{37}{subsubsection.4.1.2.3}
+\contentsline {subsection}{\numberline {4.1.3}Indici di forma}{37}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}Indice di asimmetria}{37}{subsubsection.4.1.3.1}
+\contentsline {subsection}{\numberline {4.1.4}\textit {Box plot}}{37}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}\textit {Outliers}}{38}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Procedura di identificazione e di trattamento degli \textit {outliers}}{39}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Dati mancanti}{39}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Tecniche di trattamento dei dati mancanti}{40}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Media mobile}{41}{section.4.4}
+\contentsline {section}{\numberline {4.5}Componenti di una \textit {time series}}{42}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Trend}{42}{subsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Individuazione del trend}{42}{subsubsection.4.5.1.1}
+\contentsline {subsubsection}{\numberline {4.5.1.2}Rimozione del trend}{44}{subsubsection.4.5.1.2}
+\contentsline {subsection}{\numberline {4.5.2}Componente periodica}{44}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Correlazione}{45}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Coefficiente di correlazione di Spearman}{45}{subsection.4.6.1}
+\contentsline {chapter}{\numberline {5}Risultati delle elaborazioni}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Analisi esplorativa dei dati - risultati}{47}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Impianto A}{48}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Caratteristiche del liquame in ingresso}{48}{subsubsection.5.1.1.1}
+\contentsline {paragraph}{\numberline {5.1.1.1.1}Caratteristiche qualitative}{50}{figure.caption.52}
+\contentsline {paragraph}{\numberline {5.1.1.1.2}Carichi inquinanti}{64}{paragraph.5.1.1.1.2}
+\contentsline {subsubsection}{\numberline {5.1.1.2}Caratteristiche dell'effluente}{69}{subsubsection.5.1.1.2}
+\contentsline {paragraph}{\numberline {5.1.1.2.1}Caratteristiche qualitative}{69}{figure.caption.81}
+\contentsline {subsubsection}{\numberline {5.1.1.3}Prestazioni}{75}{subsubsection.5.1.1.3}
+\contentsline {subsubsection}{\numberline {5.1.1.4}Parametri operativi}{76}{subsubsection.5.1.1.4}
+\contentsline {subsection}{\numberline {5.1.2}Impianto B}{84}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Caratteristiche del liquame in ingresso}{84}{subsubsection.5.1.2.1}
+\contentsline {paragraph}{\numberline {5.1.2.1.1}Caratteristiche qualitative}{85}{paragraph.5.1.2.1.1}
+\contentsline {paragraph}{\numberline {5.1.2.1.2}{Carichi inquinanti}}{98}{paragraph.5.1.2.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.2}Caratteristiche dell'effluente}{103}{subsubsection.5.1.2.2}
+\contentsline {paragraph}{\numberline {5.1.2.2.1}Caratteristiche qualitative}{103}{paragraph.5.1.2.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.3}Prestazioni}{109}{subsubsection.5.1.2.3}
+\contentsline {subsubsection}{\numberline {5.1.2.4}Parametri operativi}{110}{subsubsection.5.1.2.4}
+\contentsline {section}{\numberline {5.2}Statistica descrittiva - risultati}{114}{section.5.2}
+\contentsline {section}{\numberline {5.3}Analisi degli \textit {outliers}}{123}{section.5.3}
+\contentsline {section}{\numberline {5.4}Individuazione e rimozione del trend}{125}{section.5.4}
+\contentsline {section}{\numberline {5.5}Individuazione della componente periodica}{153}{section.5.5}
+\contentsline {section}{\numberline {5.6}Analisi della correlazione}{179}{section.5.6}
+\contentsline {chapter}{\numberline {6}Sviluppi futuri}{192}{chapter.6}
+\contentsline {chapter}{\nameref {ch:C}}{193}{chapter*.224}
+\renewcommand {\cftchappresnum }{Appendice }
+\contentsline {chapter}{\numberline {A}Configurazione R e RStudio\texttrademark }{196}{appendix.Alph1}
+\contentsline {chapter}{Bibliografia}{197}{section*.228}

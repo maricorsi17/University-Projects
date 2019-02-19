@@ -1,0 +1,225 @@
+In questo capitolo sono sintetizzati i principali concetti teorici dell'ingegneria sanitaria-ambientale utilizzati quando si procede con l'elaborazione dei dati gestionali per mezzo di metodi convenzionali. Questi metodi coinvolgono l'analisi della rappresentazione grafica dei dati tal quali, il calcolo e la rappresentazione di rapporti tra variabili, carichi e rendimenti e, occasionalmente, la valutazione di parametri statistici di base come media, mediana e percentili.
+
+\section{Definizioni}
+\subsection{Caratteristiche qualitative delle acque di scarico}
+
+\paragraph*{SST - Solidi Sospesi Totali}
+I solidi sospesi totali sono tutte le particelle di dimensione superiore a 10\textsuperscript{-3} mm contenute nel liquame, la cui misurazione viene condotta mediante filtrazione a 0,45 $\mu$m e successiva evaporazione della fase liquida in stufa a 105°C. Essi includono sia i solidi sedimentabili che quelli non sedimentabili che si distinguono effettuando una decantazione statica in cono Imhoff per due ore. Il risultato è espresso in termini di volume di fango sedimentato (SSS) rispetto al volume del campione (l'unità di misura è mL/L). Entrambi i tipi di solidi sospesi possono essere volatili o non volatili, in virtù del fatto che siano di tipo organico o inorganico \cite{collivignarelli2012ingegneria}.
+
+
+\paragraph*{Temperatura}
+La temperatura del liquame influenza i processi biologici e la solubilità dell'ossigeno. Temperature relativamente elevate velocizzano i processi di depurazione, ma temperature troppo elevate (superiori a 40-50\textdegree C) inibiscono i processi di ossidazione biologica e di nitrificazione. Inoltre, all'aumentare della temperatura, la concentrazione a saturazione dell'ossigeno disciolto in vasca di ossidazione diminuisce. Anche temperature basse, inferiori ai 12\textdegree C, sono problematiche perché i batteri nitrificanti cessano la propria attività \cite{bonomo2008trattamenti}.  
+
+\paragraph*{BOD - \textit{Biological Oxygen Demand}}
+Il BOD è una misura del contenuto di sostanza organica biodegradabile. Questa misura è di tipo indiretto perché ciò che si determina è la quantità di ossigeno che i batteri consumano per ossidare i composti biodegradabili contenuti nel liquame. Poiché la tecnica di misurazione del BOD richiede tempi lunghi, la procedura standard prevede di misurare il BOD\textsubscript{5}, ovvero il consumo di ossigeno dopo 5 giorni dall'avvio della prova. Tale valore, per reflui di origine domestica, rappresenta il 68\% del BOD totale \cite{collivignarelli2012ingegneria}.
+\paragraph*{COD - \textit{Chemical Oxygen Demand}}
+IL COD è una misura della quantità di ossigeno richiesto per ossidare chimicamente le sostanze (principalmente organiche) contenute nel liquame, utilizzando un forte ossidante. Durante la procedura di misurazione, vengono ossidati anche eventuali composti inorganici riducenti, mentre non si hanno effetti sull'azoto in forma ammoniacale. La durata della procedura è di circa 2 ore (molto minore rispetto a quella per il BOD\textsubscript{5}) \cite{collivignarelli2012ingegneria}.
+
+\paragraph*{pH}
+Il pH è un parametro che influenza le reazioni chimiche e biochimiche. La maggior parte dei processi biologici ha luogo per valori di pH compresi tra 5,5 e 9 \cite{bonomo2008trattamenti}.
+\paragraph*{Azoto}
+L'azoto è un nutriente indispensabile per la crescita dei microrganismi. Nelle acque reflue, l'azoto è presente sotto forma di:
+\begin{itemize}
+	\item azoto ammoniacale (N-NH\textsubscript{4}\textsuperscript{+});
+	\item azoto nitroso (N-NO\textsubscript{2}\textsuperscript{-});
+	\item azoto nitrico (N-NO\textsubscript{3}\textsuperscript{-});
+	\item azoto organico, cioè azoto combinato a molecole organiche come proteine, amminoacidi, ecc.
+\end{itemize}
+Spesso si fa riferimento anche ad altri due parametri:
+\begin{itemize}
+	\item TKN (\textit{Total Kjeldahl Nitrogen}): somma dell'azoto ammoniacale e dell'azoto organico;
+	\item azoto totale: somma di TKN, azoto nitroso e azoto nitrico.
+\end{itemize}
+Nei reflui civili, l'azoto ammoniacale rappresenta una grande percentuale del totale, seguito dall'azoto organico. Le forme ossidate, invece, danno un contributo irrisorio \cite{collivignarelli2012ingegneria}.
+
+Qualora i dati a disposizione fornissero il valore di concentrazione di ione ammonio NH\textsubscript{4}\textsuperscript{+}, esso va convertito in azoto ammoniacale N-NH\textsubscript{4}\textsuperscript{+} con un semplice esercizio di determinazione della composizione percentuale del composto, quindi:
+\begin{equation}
+\operatorname{NH_{4}^{+}}:(14+4\cdot 1)=\operatorname{N-NH_{4}^{+}}:14
+\end{equation}
+\begin{equation}
+\operatorname{N-NH_{4}^{+}}=0,78\cdot \operatorname{NH_{4}^{+}}
+\end{equation}
+\paragraph*{Fosforo}
+Anche il fosforo è un nutriente necessario per il metabolismo dei batteri. Esso proviene principalmente dalle deiezioni umane e contributi molto minori derivano dall'impiego di polifosfati in ambito industriale \cite{bonomo2008trattamenti}.
+
+\paragraph*{\textit{Escherichia coli}}
+\`E la specie di batteri più rappresentativa dei coliformi fecali ed è indice sicuro di inquinamento fecale delle acque poiché è il costituente predominante della popolazione batterica residente nell'intestino umano. Per questo motivo, è il parametro di riferimento per la carica batterica nella normativa nazionale \cite{bonomo2008trattamenti}.
+
+\subsection{Parametri operativi}
+\label{subsec:par_op_th}
+\paragraph*{SST\textsubscript{OX}}
+I solidi sospesi totali in vasca di ossidazione sono una misura indiretta della biomassa perché contengono anche altre componenti come materiale inorganico, organismi legati ai batteri e microrganismi morti. Valori tipici di concentrazione di SST in vasca di ossidazione sono di circa 3-5 kgSST/m\textsuperscript{3}. Per una stima migliore, sarebbe opportuno considerare i solidi sospesi volatili (SSV) che non includono il materiale sospeso di tipo inorganico. Se si volessero quindi convertire in SSV i SST, si consideri che, in mancanza di misurazioni dirette o di indicazioni specifiche per il caso in esame, è buona norma considerare, per liquami urbani, un rapporto tra le due grandezze pari a 0,7-0,75 \cite{bonomo2008trattamenti}. 
+\paragraph*{Fango di ricircolo}
+\`E la frazione di fango sedimentato sul fondo del sedimentatore che viene ricircolata nel reattore biologico al fine di reimmettere la biomassa responsabile della biodegradazione \cite{collivignarelli2012ingegneria}).
+\paragraph*{SST\textsubscript{RIC}}
+I solidi sospesi totali nel fango di ricircolo sono una misura della biomassa in esso contenuta. La loro concentrazione è generalmente circa il doppio della concentrazione di SST nel reattore biologico \cite{collivignarelli2012ingegneria}.
+\paragraph*{SVI - \textit{Sludge Volume Index}}
+L'indice di volume del fango, o indice di Mohlman, è una misura della sedimentabilità del fango attivo ed è dato dal rapporto tra il volume del fango (SSS\textsubscript{OX} [mL/L], misurato tramite sedimentazione statica) e i grammi di SST\textsubscript{OX} contenuti in un litro di miscela aerata:
+\begin{equation}
+SVI=\frac{SSS_{OX}}{SST_{OX}}
+\end{equation}
+La sua unità di misura è quindi mL/g.
+In base alla definizione è facile osservare che valori bassi di SVI indicano una buona sedimentabilità, mentre valori elevati sono propri di fanghi mal sedimentabili \cite{bonomo2008trattamenti}.
+\paragraph*{Fango di supero} 
+\`E la frazione di fango sedimentato sul fondo del sedimentatore che viene estratta per mantenere costante la massa di fango attivo all'interno del sistema \cite{collivignarelli2012ingegneria}.
+\paragraph*{Carico del fango - C\textsubscript{f}}
+Il carico del fango è una misura del substrato messo a disposizione della biomassa. \`E definito come la quantità di sostanza organica biodegradabile in ingresso al reattore biologico nell'unità di tempo e per unità di biomassa presente:
+\begin{equation}
+C_{f}=\frac{Q\cdot BOD\textsubscript{5}}{V_{OX}\cdot SST_{OX}}
+\end{equation}
+Il numeratore rappresenta il carico di BOD\textsubscript{5} in ingresso (in kg/d) mentre il denominatore è il prodotto tra il volume della vasca di ossidazione (in m\textsuperscript{3}) e la concentrazione di biomassa in termini di solidi sospesi totali (in kg/m\textsuperscript{3})). L'unità di misura del carico del fango è quindi kgBOD\textsubscript{5}/(kgSST $\cdot$ d) o, più semplicemente, d\textsuperscript{-1} \cite{bonomo2008trattamenti}.
+
+Per bassi valori di carico del fango si hanno alto rendimento di depurazione, nitrificazione e scarsa produzione di fango di supero. All'aumentare di C\textsubscript{f}, invece, il rendimento tende a diminuire, il fango di supero è più abbondante e, per valori superiori a 0,15 kgBOD\textsubscript{5}/(kgSST $\cdot$ d), non avviene più la reazione di nitrificazione \cite{collivignarelli2012ingegneria}.
+
+Nel caso in cui l'impianto di depurazione analizzato abbia più di una linea biologica, si utilizza come SST\textsubscript{OX} il valore medio sulle $n$ linee. 
+\paragraph*{SRT - \textit{Solid Retention Time}}
+L'età del fango, o tempo medio di residenza dei fanghi, è il tempo medio di permanenza di una colonia batterica nel sistema. Per calcolarla, si divide la massa di fanghi presenti all'interno del sistema (in termini di SST) per la massa di fanghi che viene allontanata dal sistema (nei fanghi di supero e nell'effluente):
+\begin{equation}
+SRT=\frac{V_{OX}\cdot SST_{OX}}{(Q_{f}\cdot SST_{f}+Q_{out}\cdot SST_{out})}
+\end{equation}
+\label{eq:SRT}
+dove:\\
+$V_{OX}$ = volume della vasca di ossidazione [m\textsuperscript{3}];\\
+$SST_{OX}$ = concentrazione di SST nella vasca di ossidazione [kg/m\textsuperscript{3}];\\
+$Q_{f}$ = portata del fango si supero [m\textsuperscript{3}/d];\\
+$SST_{f}$ = concentrazione di SST nel fango di supero [kg/m\textsuperscript{3}];\\
+$Q_{out}$ = portata dell'effluente [m\textsuperscript{3}/d];\\
+$SST_{out}$ = concentrazione di SST nell'effluente [kg/m\textsuperscript{3}].\\
+
+Per l'ossidazione della sostanza organica, il valore minimo dell'età del fango deve essere di 2,5-3,0 d a 20\textdegree C e 3,0-5,0 d a 10\textdegree C. Affinché avvenga nitrificazione, invece, l'età del fango deve essere maggiore, in genere superiore a 8-10 d. Per avere una completa rimozione dell'azoto con il processo di nitrificazione e denitrificazione, è richiesta un'età del fango di minimo 15-20 d \cite{collivignarelli2012ingegneria}.
+
+Nell'elaborazione dei dati, si è ricavato un valore di SRT per ogni mese, utilizzando le medie mensili di $SST_{OX}$, $SST_{f}$ (che coincide con la concentrazione di solidi nel fango di ricircolo $SST_{RIC}$) e di carico di SST in uscita. Per il termine $Q_{f}$, invece, si è considerata la somma mensile espressa in m\textsuperscript{3}/d. Anche in questo caso, se ci sono più linee biologiche, si calcola SRT utilizzando i valori delle medie sulle $n$ linee.
+
+\paragraph*{Concentrazione di ossigeno disciolto - OD}
+La concentrazione di ossigeno disciolto è un parametro fondamentale per il processo biologico poiché essa deve essere adeguata al mantenimento delle condizioni ottimali per lo sviluppo degli organismi d'interesse per la rimozione degli inquinanti desiderati. In particolare, nella vasca di ossidazione/nitrificazione bisogna mantenere, per mezzo di compressori, una concentrazione tale per cui i microrganismi abbiano a disposizione l'ossigeno di cui necessitano per ossidare le sostanze organiche biodegradabili. \`E ovvio che maggiore è la concentrazione di ossigeno disciolto, maggiore è la resa di nitrificazione, a discapito però della sostenibilità economica del processo. Nella vasca di denitrificazione, invece, sono richieste condizioni anossiche e quindi non deve essere presente ossigeno disciolto.
+
+La concentrazione a saturazione di un gas in un liquido (per esempio acqua) è data dalla legge di Henry, ovvero è proporzionale alla pressione parziale del gas nella miscela gassosa sovrastante la soluzione:
+\begin{equation}
+[A_{(aq)}]=K_{H}\cdot P_{A}
+\end{equation}
+dove:\\
+$[A_{(aq)}]$ = concentrazione molare del gas in acqua;\\
+$ P_{A}$ = pressione parziale del gas;\\
+$K_{H}$ = costante di Henry che dipende dalla temperatura, dalle caratteristiche chimiche del liquido e del gas e dalla eventuale presenza di sali disciolti.\\
+
+Per avere un valore di riferimento, la concentrazione a saturazione dell'ossigeno in acqua, alla temperatura di 20\textdegree C, è di 9,17 mg/L \cite{collivignarelli2012ingegneria}.
+
+
+\section{Analisi esplorativa dei dati}
+L'analisi esplorativa dei dati (EDA - \textit{Exploratory Data Analysis }) è l'analisi visuale dei dati per mezzo di grafici diagnostici ed è il primo passo da compiere per l'elaborazione di una \textit{time series}. Alcune caratteristiche delle serie di dati sono identificabili solo tramite un controllo visivo e quindi l'analisi esplorativa non deve essere sostituita da metodi statistici più sofisticati.
+Questa analisi consiste nell'osservazione dell'andamento dei dati grezzi al fine di individuare, per esempio, valori anomali e andamenti temporali (come trend, stagionalità e ciclicità) dei dati. Il grafico che mostra il comportamento della serie di dati nel tempo è il \textit{timeplot}. L'intento è quello di evidenziare aspetti particolari e di scegliere quali ulteriori grafici produrre perché di particolare utilità nella comprensione dei dati studiati \cite{book}.\\
+
+\subsection{Composizione tipica di liquami domestici}
+I \textit{timeplot} delle concentrazioni in ingresso dei diversi inquinanti possono essere confrontati con la \autoref{tab:conc_tipiche}, che descrive la composizione tipica di un liquame domestico, per stabilire quale sia il livello di concentrazione dell'acqua reflua che si sta analizzando. 
+
+\begin{table}
+	\scriptsize
+	\begin{center}
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Parametro}}} & \multicolumn{3}{c|}{\textbf{Concentrazione {[}mg/L{]}}} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{}                                    & \textbf{Forte}   & \textbf{Media}   & \textbf{Debole}   \\ \hline
+			\textbf{SST}                                              & 350              & 200              & 100               \\ \hline
+			\textbf{BOD\textsubscript{5}}                                             & 300              & 200              & 100               \\ \hline
+			\textbf{COD}                                              & 1.000            & 500              & 250               \\ \hline
+			\textbf{N\textsubscript{tot}}                                             & 85               & 40               & 20                \\ \hline
+			\textbf{N-NH\textsubscript{4}\textsuperscript{+}}                                           & 50               & 25               & 12                \\ \hline
+			\textbf{N-NO\textsubscript{2}\textsuperscript{-}}                                            & 0                & 0                & 0                 \\ \hline
+			\textbf{N-NO\textsubscript{3}\textsuperscript{-}}                                            & 0                & 0                & 0                 \\ \hline
+			\textbf{P\textsubscript{tot}}                                             & 10               & 6                & 3                 \\ \hline
+		\end{tabular}
+		\caption{Composizione tipica di un liquame domestico \cite{vismara}}
+		\label{tab:conc_tipiche}
+	\end{center}
+\end{table}
+
+\subsection{Rapporti}
+\label{subsec:rapporti}
+Per la valutazione delle condizioni di funzionamento degli impianti a fanghi attivi, è utile calcolare, rappresentare e analizzare l'andamento dei rapporti tra le concentrazioni in ingresso di alcuni inquinanti.
+In particolare, sono interessanti i rapporti BOD\textsubscript{5}/COD, N\textsubscript{tot}/BOD\textsubscript{5}, N\textsubscript{tot}/COD, P\textsubscript{tot}/BOD\textsubscript{5}, P\textsubscript{tot}/COD, P\textsubscript{tot}/N\textsubscript{tot}.
+
+Il rapporto tra BOD\textsubscript{5} e COD dà indicazioni riguardo alla percentuale di sostanza organica biodegradabile rispetto al totale delle sostanze ossidabili. Inoltre, definito su base statistica il valore di tale rapporto, si può scegliere di misurare il COD per le analisi di routine e quindi di risalire al BOD\textsubscript{5}. Questa scelta di carattere pratico sarebbe da favorire vista la maggiore rapidità della procedura di misurazione del COD rispetto a quella del BOD\textsubscript{5}, che verrebbe comunque condotta periodicamente per verifica \cite{bonomo2008trattamenti}.
+
+Gli altri rapporti, invece, sono utili per capire se le caratteristiche del liquame in ingresso sono sbilanciate verso i nutrienti e, in caso affermativo, se lo sono verso il fosforo o verso l'azoto.\\
+
+I rapporti ottenuti dai dati degli impianti in esame vanno confrontati con i rispettivi valori minimo, tipico e massimo. Per determinare questi riferimenti, si considerano gli apporti pro capite (minimo, tipico e massimo) per ciascun inquinante. Come è ovvio che sia, il rapporto tipico è calcolato dividendo gli apporti tipici, mentre per il rapporto minimo e massimo si combinano opportunamente apporti massimi e minimi (vale a dire che per numeratore e denominatore si utilizzeranno rispettivamente gli apporti minimo e massimo per il rapporto minimo e viceversa per quello massimo).
+
+Gli apporti pro capite e i valori di riferimento dei rapporti sono raccolti in \autoref{tab:ppc_rapporti}.
+
+\begin{table}[h]
+	\scriptsize
+	\begin{center}
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{4}{|c|}{\textbf{Apporto pro capite {[}g ab\textsuperscript{-1} d\textsuperscript{-1}{]}}}     \\ \hline
+			\textbf{Parametro} & \textbf{Minimo} & \textbf{Massimo} & \textbf{Tipico} \\ \hline
+			\textbf{BOD\textsubscript{5}}      & 54              & 70               & 60              \\ \hline
+			\textbf{COD}       & 110             & 130              & 120             \\ \hline
+			\textbf{N\textsubscript{tot}}      & 12              & 15               & 12              \\ \hline
+			\textbf{P\textsubscript{tot}}      & 1,2             & 1,5              & 1,2             \\ \hline
+			\multicolumn{4}{|c|}{\textbf{Rapporti {[} - {]}}}                         \\ \hline
+			\textbf{Rapporto}  & \textbf{Minimo} & \textbf{Massimo} & \textbf{Tipico} \\ \hline
+			\textbf{BOD\textsubscript{5}/COD}  & 0,415           & 0,636            & 0,500           \\ \hline
+			\textbf{N\textsubscript{tot}/BOD\textsubscript{5}} & 0,171           & 0,278            & 0,200           \\ \hline
+			\textbf{N\textsubscript{tot}/COD}  & 0,092           & 0,136            & 0,100           \\ \hline
+			\textbf{P\textsubscript{tot}/BOD\textsubscript{5}} & 0,017           & 0,028            & 0,020           \\ \hline
+			\textbf{P\textsubscript{tot}/COD}  & 0,009           & 0,014            & 0,010           \\ \hline
+			\textbf{P\textsubscript{tot}/N\textsubscript{tot}} & 0,080           & 0,125            & 0,100           \\ \hline
+		\end{tabular}
+		\caption{Valori di riferimento, nel caso di un liquame urbano, relativamente all'apporto pro capite dei principali inquinanti e dei loro rapporti \cite{bonomo2008trattamenti} \cite{tuning}}
+		\label{tab:ppc_rapporti}
+	\end{center}
+\end{table}
+
+\subsection{Carichi}
+\label{subsec:carichi}
+Il carico in ingresso esprime la massa di inquinante che entra nel sistema in un giorno e la sua unità di misura è kg/d. Il calcolo è semplicemente dato dal prodotto tra la concentrazione in ingresso di inquinante e la portata in ingresso:
+\begin{equation}
+Carico=Concentrazione_{IN}\cdot Q_{IN}
+\end{equation}
+
+Al fine di valutare se i carichi in ingresso siano compatibili con la potenzialità di progetto, è utile calcolare i valori di carico espressi nella stessa unità di misura di quest'ultima, ovvero abitanti equivalenti (AE). Noti i valori tipici di apporto pro capite per ciascun inquinante (\autoref{tab:ppc_rapporti}), il carico in abitanti equivalenti è il rapporto tra il carico e l'apporto pro capite.
+
+\section{Rendimenti}
+\label{sec:rend}
+I rendimenti danno informazioni riguardo all'efficacia dei processi che avvengono nell'impianto di depurazione. Di particolare interesse sono i rendimenti di rimozione di BOD\textsubscript{5}, COD, azoto totale e fosforo totale e i rendimenti di nitrificazione e di denitrificazione:
+
+\begin{equation}
+\eta_{BOD_{5}}=\frac{\operatorname{BOD_{5-IN}}-\operatorname{BOD_{5-OUT}}}{\operatorname{BOD_{5-IN}}}\cdot 100
+\end{equation}
+
+\begin{equation}
+\eta_{COD}=\frac{\operatorname{COD_{IN}}-\operatorname{COD_{OUT}}}{\operatorname{COD_{IN}}}\cdot 100
+\end{equation}
+
+\begin{equation}
+\eta_{N_{tot}}=\frac{\operatorname{N_{tot-IN}}-\operatorname{N_{tot-OUT}}}{\operatorname{N_{tot-IN}}}\cdot 100
+\end{equation}
+
+\begin{equation}
+\eta_{P_{tot}}=\frac{\operatorname{P_{tot-IN}}-\operatorname{P_{tot-OUT}}}{\operatorname{P_{tot-IN}}}\cdot 100
+\end{equation}
+
+\begin{equation}
+\eta_{nit}=\frac{\operatorname{TKN_{IN}}-\operatorname{N-NH_{4-OUT}^{+}}-\operatorname{N_{ass}}}{\operatorname{TKN_{IN}}-\operatorname{N_{ass}}}\cdot 100
+\end{equation}
+
+\begin{equation}
+\eta_{den}=\frac{\operatorname{N_{tot-IN}}-\operatorname{N-NH_{4-OUT}^{+}}-\operatorname{N-NO_{2-OUT}^{-}}-\operatorname{N-NO_{3-OUT}^{-}}-\operatorname{N_{ass}}}{\operatorname{N_{tot-IN}}-\operatorname{N-NH_{4-OUT}^{+}}-\operatorname{N_{ass}}}\cdot 100
+\end{equation}
+
+Con $\operatorname{N_{ass}}$ si intende l'azoto assimilato, ovvero l'azoto che viene rimosso perché utilizzato per la sintesi batterica. In particolare, tale contributo è pari al 5\% del BOD\textsubscript{5} rimosso \cite{collivignarelli2012ingegneria}.
+
+Si precisa che tutti i termini che compaiono nelle equazioni sono dei carichi.
+
+\section{Limiti allo scarico}
+\label{sec:limiti_scarico}
+Le concentrazioni di inquinanti nell'effluente devono rispettare i limiti imposti dalla normativa.
+
+A livello nazionale, i limiti di emissione degli scarichi idrici sono indicati nell'Allegato 5 alla parte III del D. Lgs. 152/06.
+Secondo l'art. 101, comma 2 di tale decreto, le regioni hanno la facoltà di definire valori limite diversi da quelli dell'Allegato 5 alla parte III, purché non siano meno restrittivi \cite{DLgs152}.
+
+Lo stesso decreto stabilisce, per i parametri BOD\textsubscript{5}, COD e SST, il numero massimo consentito, su base annua, di campioni non conformi ai limiti allo scarico, in relazione al numero di campioni prelevati durante l'anno. Ciò significa che una certa percentuale di campioni in uscita può avere concentrazioni eccedenti quelle limite. 
+Poiché ci si aspetta che campioni non conformi siano la conseguenza di carichi in ingresso particolarmente elevati, si può pensare di utilizzare questo riferimento per valutare se i carichi di inquinanti in ingresso, espressi in abitanti equivalenti, siano compatibili con la potenzialità di progetto dell'impianto. In altre parole, si considera accettabile avere una certa percentuale (uguale a quella determinata per l'uscita) di campioni in ingresso con carichi eccedenti gli abitanti equivalenti per cui è stato progettato l'impianto di depurazione.
+
+

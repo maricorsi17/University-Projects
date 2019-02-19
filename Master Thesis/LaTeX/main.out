@@ -1,0 +1,70 @@
+\BOOKMARK [0][-]{chapter*.1}{Introduzione}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Descrizione degli impianti}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Impianto A}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.1}{Schema funzionale}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.2}{Dotazioni}{section.1.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Impianto B}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.2.1}{Schema funzionale}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.2}{Dotazioni}{section.1.2}% 8
+\BOOKMARK [0][-]{chapter.2}{Descrizione dei dati}{}% 9
+\BOOKMARK [0][-]{chapter.3}{Metodi convenzionali di elaborazione dei dati gestionali}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Definizioni}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{Caratteristiche qualitative delle acque di scarico}{section.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.1.2}{Parametri operativi}{section.3.1}% 13
+\BOOKMARK [1][-]{section.3.2}{Analisi esplorativa dei dati}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.2.1}{Composizione tipica di liquami domestici}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.2}{Rapporti}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.3}{Carichi}{section.3.2}% 17
+\BOOKMARK [1][-]{section.3.3}{Rendimenti}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Limiti allo scarico}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Richiami di statistica}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Statistica descrittiva}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.1.1}{Indici di posizione}{section.4.1}% 22
+\BOOKMARK [3][-]{subsubsection.4.1.1.1}{Media}{subsection.4.1.1}% 23
+\BOOKMARK [3][-]{subsubsection.4.1.1.2}{Percentili}{subsection.4.1.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.2}{Indici di dispersione}{section.4.1}% 25
+\BOOKMARK [3][-]{subsubsection.4.1.2.1}{Varianza}{subsection.4.1.2}% 26
+\BOOKMARK [3][-]{subsubsection.4.1.2.2}{Scarto quadratico medio}{subsection.4.1.2}% 27
+\BOOKMARK [3][-]{subsubsection.4.1.2.3}{Coefficiente di variazione}{subsection.4.1.2}% 28
+\BOOKMARK [2][-]{subsection.4.1.3}{Indici di forma}{section.4.1}% 29
+\BOOKMARK [3][-]{subsubsection.4.1.3.1}{Indice di asimmetria}{subsection.4.1.3}% 30
+\BOOKMARK [2][-]{subsection.4.1.4}{Box plot}{section.4.1}% 31
+\BOOKMARK [1][-]{section.4.2}{Outliers}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.2.1}{Procedura di identificazione e di trattamento degli outliers}{section.4.2}% 33
+\BOOKMARK [1][-]{section.4.3}{Dati mancanti}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.3.1}{Tecniche di trattamento dei dati mancanti}{section.4.3}% 35
+\BOOKMARK [1][-]{section.4.4}{Media mobile}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.5}{Componenti di una time series}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.5.1}{Trend}{section.4.5}% 38
+\BOOKMARK [3][-]{subsubsection.4.5.1.1}{Individuazione del trend}{subsection.4.5.1}% 39
+\BOOKMARK [3][-]{subsubsection.4.5.1.2}{Rimozione del trend}{subsection.4.5.1}% 40
+\BOOKMARK [2][-]{subsection.4.5.2}{Componente periodica}{section.4.5}% 41
+\BOOKMARK [1][-]{section.4.6}{Correlazione}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.6.1}{Coefficiente di correlazione di Spearman}{section.4.6}% 43
+\BOOKMARK [0][-]{chapter.5}{Risultati delle elaborazioni}{}% 44
+\BOOKMARK [1][-]{section.5.1}{Analisi esplorativa dei dati - risultati}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.1.1}{Impianto A}{section.5.1}% 46
+\BOOKMARK [3][-]{subsubsection.5.1.1.1}{Caratteristiche del liquame in ingresso}{subsection.5.1.1}% 47
+\BOOKMARK [4][-]{figure.caption.52}{Caratteristiche qualitative}{subsubsection.5.1.1.1}% 48
+\BOOKMARK [4][-]{paragraph.5.1.1.1.2}{Carichi inquinanti}{subsubsection.5.1.1.1}% 49
+\BOOKMARK [3][-]{subsubsection.5.1.1.2}{Caratteristiche dell'effluente}{subsection.5.1.1}% 50
+\BOOKMARK [4][-]{figure.caption.81}{Caratteristiche qualitative}{subsubsection.5.1.1.2}% 51
+\BOOKMARK [3][-]{subsubsection.5.1.1.3}{Prestazioni}{subsection.5.1.1}% 52
+\BOOKMARK [3][-]{subsubsection.5.1.1.4}{Parametri operativi}{subsection.5.1.1}% 53
+\BOOKMARK [2][-]{subsection.5.1.2}{Impianto B}{section.5.1}% 54
+\BOOKMARK [3][-]{subsubsection.5.1.2.1}{Caratteristiche del liquame in ingresso}{subsection.5.1.2}% 55
+\BOOKMARK [4][-]{paragraph.5.1.2.1.1}{Caratteristiche qualitative}{subsubsection.5.1.2.1}% 56
+\BOOKMARK [4][-]{paragraph.5.1.2.1.2}{Carichi inquinanti}{subsubsection.5.1.2.1}% 57
+\BOOKMARK [3][-]{subsubsection.5.1.2.2}{Caratteristiche dell'effluente}{subsection.5.1.2}% 58
+\BOOKMARK [4][-]{paragraph.5.1.2.2.1}{Caratteristiche qualitative}{subsubsection.5.1.2.2}% 59
+\BOOKMARK [3][-]{subsubsection.5.1.2.3}{Prestazioni}{subsection.5.1.2}% 60
+\BOOKMARK [3][-]{subsubsection.5.1.2.4}{Parametri operativi}{subsection.5.1.2}% 61
+\BOOKMARK [1][-]{section.5.2}{Statistica descrittiva - risultati}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.3}{Analisi degli outliers}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.4}{Individuazione e rimozione del trend}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.5}{Individuazione della componente periodica}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.6}{Analisi della correlazione}{chapter.5}% 66
+\BOOKMARK [0][-]{chapter.6}{Sviluppi futuri}{}% 67
+\BOOKMARK [0][-]{chapter*.224}{Conclusioni}{}% 68
+\BOOKMARK [0][-]{appendix.Alph1}{Configurazione R e RStudio\222}{}% 69
+\BOOKMARK [0][-]{section*.228}{Bibliografia}{}% 70

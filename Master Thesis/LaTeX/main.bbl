@@ -1,0 +1,135 @@
+\begin{thebibliography}{}
+
+\bibitem[Aguinis et~al., 2013]{outliers}
+Aguinis, H., Gottfredson, R.~K., and Joo, H. (2013).
+\newblock Best-practice recommendations for defining, identifying, and handling
+  outliers.
+\newblock {\em Organizational Research Methods}, 16(2):270--301.
+
+\bibitem[Alexandrov et~al., 2012]{detrending2}
+Alexandrov, T., Bianconcini, S., Dagum, E.~B., Maass, P., and McElroy, T.~S.
+  (2012).
+\newblock A review of some modern approaches to the problem of trend
+  extraction.
+\newblock {\em Econometric Reviews}, 31(6):593--624.
+
+\bibitem[Anderson, 1994]{anderson1994statistical}
+Anderson, T. (1994).
+\newblock {\em The Statistical Analysis of Time Series}.
+\newblock Wiley Classics Library. Wiley.
+
+\bibitem[Bonomo, 2008]{bonomo2008trattamenti}
+Bonomo, L. (2008).
+\newblock {\em Trattamenti delle acque reflue}.
+\newblock Collana di istruzione scientifica: Serie di ambiente e territorio.
+  McGraw-Hill Companies.
+
+\bibitem[Brown and Berthouex, 2002]{brown2002statistics}
+Brown, L. and Berthouex, P. (2002).
+\newblock {\em Statistics for Environmental Engineers, Second Edition}.
+\newblock Taylor \& Francis.
+
+\bibitem[Chowdhury et~al., 2015]{coeffcorr}
+Chowdhury, A.~K., Debsarkar, A., and Chakrabarty, S. (2015).
+\newblock Novel methods for assessing urban air quality: Combined air and noise
+  pollution approach.
+\newblock {\em Journal of Atmospheric Pollution}, 3(1):1--8.
+
+\bibitem[Cleveland, 1979]{LOESS}
+Cleveland, W.~S. (1979).
+\newblock Robust locally weighted regression and smoothing scatterplots.
+\newblock {\em Journal of the American Statistical Association},
+  74(368):829--836.
+
+\bibitem[Collivignarelli and Bertanza, 2012]{collivignarelli2012ingegneria}
+Collivignarelli, C. and Bertanza, G. (2012).
+\newblock {\em Ingegneria sanitaria-ambientale}.
+\newblock Citt{\`a}Studi.
+
+\bibitem[Erickson et~al., 2017]{regressioneOK}
+Erickson, R.~A., Gray, B.~R., and Eager, E.~A. (2017).
+\newblock Estimating linear temporal trends from aggregated environmental
+  monitoring data.
+\newblock {\em Ecological Indicators}, 74:62 -- 72.
+
+\bibitem[Hartley, 2013]{tuning}
+Hartley, K. (2013).
+\newblock {\em Tuning Biological Nutrient Removal Plants}.
+\newblock IWA Publishing.
+
+\bibitem[ISPRA, 2013]{book}
+ISPRA (2013).
+\newblock {\em Linee guida per l’analisi e l’elaborazione statistica di
+  base delle serie storiche di dati idrologici, ISPRA - Manuali e Linee Guida
+  84/2013, Roma}.
+
+\bibitem[Italia, 2006]{DLgs152}
+Italia (2006).
+\newblock {\em Decreto Legislativo 5 aprile 2006, n.152, Norme in materia
+  ambientale}.
+\newblock Gazzetta Ufficiale N.88, 14/04/06, supplemento ordinario.
+
+\bibitem[Kang, 2013]{article}
+Kang, H. (2013).
+\newblock The prevention and handling of the missing data.
+\newblock 64:402--6.
+
+\bibitem[Moritz et~al., 2015]{Moritz2015ComparisonOD}
+Moritz, S., Sard{\'a}, A., Bartz-Beielstein, T., Zaefferer, M., and Stork, J.
+  (2015).
+\newblock Comparison of different methods for univariate time series imputation
+  in r.
+\newblock {\em CoRR}, abs/1510.03924.
+
+\bibitem[Nopiah et~al., 2012]{ACF}
+Nopiah, Z., Lennie, A., Abdullah, S., Nuawi, M., Nuryazmin, A., and Baharin, M.
+  (2012).
+\newblock {The Use of Autocorrelation Function in the Seasonality Analysis for
+  Fatigue Strain Data}.
+\newblock {\em Journal of Asian Scientific Research}, 2(11):782--788.
+
+\bibitem[Priestley, 1981]{priestley1981spectral}
+Priestley, M. (1981).
+\newblock {\em Spectral Analysis and Time Series}.
+\newblock Number v. 1-2 in Probability and mathematical statistics. Academic
+  Press.
+
+\bibitem[{R Core Team}, 2018]{introR}
+{R Core Team} (2018).
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[Reddy, 2005]{MA}
+Reddy, P. (2005).
+\newblock {\em A Text Book of Hydrology}.
+\newblock Laxmi Publications.
+
+\bibitem[RegioneVeneto, 2018]{PTA}
+RegioneVeneto (2018).
+\newblock {\em Allegato A3 alla Deliberazione del Consiglio Regionale n. 107
+  del 5 novembre 2009 e successive modifiche e integrazioni}.
+\newblock Norme Tecniche di Attuazione del PTA.
+
+\bibitem[Ross and Morandin, 2008]{ross2008probabilita}
+Ross, S. and Morandin, F. (2008).
+\newblock {\em Probabilit{\`a} e statistica per l'ingegneria e le scienze}.
+\newblock Idee \& strumenti. Maggioli.
+
+\bibitem[Sharma, 2005]{correlation}
+Sharma, A. (2005).
+\newblock {\em Text Book Of Correlations And Regression}.
+\newblock DPH mathematics series. Discovery Publishing House.
+
+\bibitem[Vismara, 1998]{vismara}
+Vismara, R. (1998).
+\newblock {\em Depurazione biologica: teoria e processi}.
+\newblock Hoepli.
+
+\bibitem[Wu et~al., 2007]{Wu14889}
+Wu, Z., Huang, N.~E., Long, S.~R., and Peng, C.-K. (2007).
+\newblock On the trend, detrending, and variability of nonlinear and
+  nonstationary time series.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  104(38):14889--14894.
+
+\end{thebibliography}
