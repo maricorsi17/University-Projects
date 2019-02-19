@@ -1,6 +1,8 @@
 # MASTER THESIS
 **Title**: A study about working conditions of activated sludge wastewater treatment plants
 
+**Language**: Italian
+
 **Description**:
 - *Chapter one* - Treatment plants description
 - *Chapter two* - Data description
