@@ -1,6 +1,8 @@
 # BACHELOR THESIS
 **Title**: MBR (Membrane BioReactor): toxicity and micropollutants removal from wastewaters
 
+**Language**: Italian
+
 **Description**:
 - *Chapter one* - Membranes: features and filtering processes 
 - *Chapter two* - Definition of toxicity and ecological risk and ecotoxicological methods description
