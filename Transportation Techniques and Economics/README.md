@@ -1,5 +1,5 @@
 # TRANSPORTATION TECHNIQUES AND ECONOMICS
-Analysis of roads and pedestrian and vehicles traffic and project of roads and intersections in the town of Sarezzo (BS) – Italy.
+Analysis of roads and pedestrian and vehicles traffic and design of roads and intersections in the town of Sarezzo (BS) – Italy.
 
 - *Board 1*: territorial location
 - *Board 2*: functional interurban roads classification 
