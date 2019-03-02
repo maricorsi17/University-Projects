@@ -1,4 +1,4 @@
-# TRANSPORTATION TECHNIQUES AND ECONOMICS
+﻿# TRANSPORTATION TECHNIQUES AND ECONOMICS
 Analysis of roads and pedestrian and vehicles traffic and design of roads and intersections in the town of Sarezzo (BS) – Italy.
 
 - *Board 1*: territorial location
@@ -10,5 +10,5 @@ Analysis of roads and pedestrian and vehicles traffic and design of roads and in
 - Report (explaining boards)
 - Report for traffic analysis and parking areas analysis
 
-**Softwares used**: AutoCAD, Microsoft Excel, Microsoft Word
+**Software used**: AutoCAD, Microsoft Excel, Microsoft Word
 

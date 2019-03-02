@@ -14,4 +14,4 @@
 
 **Programming languages**: R, LaTeX
 
-**Softwares used**: RStudio, TeXStudio, Microsoft Excel, Microsoft PowerPoint
+**Software used**: RStudio, TeXStudio, Microsoft Excel, Microsoft PowerPoint

@@ -1,4 +1,4 @@
-# URBAN PLANNING
+﻿# URBAN PLANNING
 Project of urban renewal of a residential area in the town of Capriolo (BS) – Italy.
 
 - *Board 1*: land use analysis
@@ -9,5 +9,5 @@ Project of urban renewal of a residential area in the town of Capriolo (BS) – 
 - *Board 6*: infrastructures: project and costs
 - Short report including main territorial administration plan features and proposed planning quality standards
 
-**Softwares used**: AutoCAD, Microsoft Excel, Microsoft Word
+**Software used**: AutoCAD, Microsoft Excel, Microsoft Word
 

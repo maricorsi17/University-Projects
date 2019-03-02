@@ -8,4 +8,4 @@ Design of an activated sludge wastewater treatment plant, knowing the location a
 - Hydraulic report
 
 
-**Softwares used**: AutoCAD, Microsoft Excel, Microsoft Word
+**Software used**: AutoCAD, Microsoft Excel, Microsoft Word
